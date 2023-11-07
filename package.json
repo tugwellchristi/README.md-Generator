@@ -1,0 +1,15 @@
+{
+  "name": "readme.md-generator",
+  "version": "1.0.0",
+  "description": "## Project Description As a developer, I want to have a README.md generator in my portfolio that will be consistent and create a professional README file for each project. It will include each of the following criteria:  -",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}

@@ -5,4 +5,7 @@ As a developer, I want to have a README.md generator in my portfolio that will b
 - 
 
 ## Resources Used
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+- [How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+- [Starter code](https://github.com/coding-boot-camp/potential-enigma) 
+- [Video Submission guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide)
+
