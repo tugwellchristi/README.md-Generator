@@ -1,11 +1,27 @@
-# Professional README Generator
+## Readme Generator
 
 ## Project Description
-As a developer, I want to have a README.md generator in my portfolio that will be consistent and create a professional README file for each project. It will include each of the following criteria: 
-- 
+Project details here
 
-## Resources Used
-- [How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-- [Starter code](https://github.com/coding-boot-camp/potential-enigma) 
-- [Video Submission guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide)
+## Table of Contents
+Table of Contents here
 
+## Installation
+Detail one. Detail two. 
+
+## Usage
+Usage details here.
+
+## License Information
+This project includes the MIT.
+
+## Contributing
+Contributing details here. 
+
+## Tests
+Testing information here. 
+
+## Additional Questions
+- GitHub username: tugwellchristi
+- GitHub link: https://github.com/tugwellchristi
+- Email address: tugwellchristi@gmail.com

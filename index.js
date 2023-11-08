@@ -2,8 +2,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateREADME = ({ title, description, contents, installation, usage, license, contributing, tests, questions}) =>
-`## ${title}
+const generateREADME = ({ projectName, description, contents, installation, usage, license, contributing, tests, github, githublink, email}) =>
+`# ${projectName}
 
 ## Project Description
 ${description}
@@ -11,7 +11,7 @@ ${description}
 ## Table of Contents
 ${contents}
 
-## Project Installation
+## Installation
 ${installation}
 
 ## Usage
@@ -20,71 +20,90 @@ ${usage}
 ## License Information
 This project includes the ${license}.
 
-## Project Contributions
+## Contributing
 ${contributing}
 
-## Project Tests
+## Tests
 ${tests}
 
 ## Additional Questions
-${questions}
+- GitHub username: ${github}
+- GitHub link: ${githublink}
+- Email address: ${email}
 `;
 
 
 
 // Array of questions for user input
-const questions = [ {
+inquirer
+.prompt([ {
     type: 'input',
-    name: 'title',
+    name: 'projectName',
     message: 'What is the title of your project?',
   },
   {
     type: 'input',
-    section: 'description',
+    name: 'description',
     message: 'Provide a detailed description of your project.',
   },
   {
     type: 'input',
-    section: 'contents',
+    name: 'contents',
     message: 'Provide a table of contents for your project.',
   },
   {
     type: 'input',
-    section: 'installation',
+    name: 'installation',
     message: 'Provide details about the installation of your project.',
   },
   {
     type: 'input',
-    section: 'usage',
+    name: 'usage',
     message: 'Provide usage details about your project.',
   },
   {
     type: 'input',
-    section: 'license',
-    message: 'Provide license information for your project.',
-  },
-  {
-    type: 'input',
-    section: 'contributing',
+    name: 'contributing',
     message: 'Provide contributing information about your project.',
   },
   {
     type: 'input',
-    section: 'tests',
+    name: 'tests',
     message: 'Provide testing information for your project.',
   },
   {
     type: 'input',
-    section: 'questions',
-    message: 'Provide additional questions about the project',
+    name: 'github',
+    message: 'What is your GitHub username?',
   },
-];
+  {
+    type: 'input',
+    name: 'githublink',
+    message: 'What is the link to your GitHub profile?',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?',
+  },
+  {
+    type: 'input',
+    name: 'license',
+    message: 'Provide license information for your project.',
+  },
+])
+.then((answers) => {
+    const READMEContent = generateREADME(answers);
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+    fs.writeFile('README.md', READMEContent, (err) =>
+    err ? console.log(err) : console.log('Successfully created README.md!') 
+    );
+});
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
