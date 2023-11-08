@@ -2,6 +2,36 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const generateREADME = ({ title, description, contents, installation, usage, license, contributing, tests, questions}) =>
+`## ${title}
+
+## Project Description
+${description}
+
+## Table of Contents
+${contents}
+
+## Project Installation
+${installation}
+
+## Usage
+${usage}
+
+## License Information
+This project includes the ${license}.
+
+## Project Contributions
+${contributing}
+
+## Project Tests
+${tests}
+
+## Additional Questions
+${questions}
+`;
+
+
+
 // Array of questions for user input
 const questions = [ {
     type: 'input',
