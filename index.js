@@ -2,7 +2,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// Function to generate the README.md file and the content that will be included
 const generateREADME = ({ projectName, description, contents, installation, usage, license, contributing, tests, github, githublink, email}) =>
+// const licenseOptions = {
+//     'MIT': 'MIT'
+// }
+
 `# ${projectName}
 
 ## Project Description
@@ -18,7 +23,7 @@ ${installation}
 ${usage}
 
 ## License Information
-This project includes the ${license}.
+This project includes the ${license} license.
 
 ## Contributing
 ${contributing}
@@ -32,9 +37,6 @@ ${tests}
 - Email address: ${email}
 `;
 
-
-
-// Array of questions for user input
 inquirer
 .prompt([ {
     type: 'input',
@@ -87,9 +89,10 @@ inquirer
     message: 'What is your email address?',
   },
   {
-    type: 'input',
+    type: 'list',
     name: 'license',
-    message: 'Provide license information for your project.',
+    message: 'Choose a license for your project.',
+    choices: ['MIT', 'GPL', 'Apache', 'No license']
   },
 ])
 .then((answers) => {
