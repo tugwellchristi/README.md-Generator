@@ -3,18 +3,23 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // Function to generate the README.md file and the content that will be included
-const generateREADME = ({ projectName, description, contents, installation, usage, license, contributing, tests, github, githublink, email}) =>
-// const licenseOptions = {
-//     'MIT': 'MIT'
-// }
+const generateREADME = ({ projectName, description, installation, usage, license, contributing, tests, github, githublink, email}) =>
 
+// Content that will be displayed on the generated README.md file once the user completes the prompted items
 `# ${projectName}
+* ${license} license
 
 ## Project Description
 ${description}
 
 ## Table of Contents
-${contents}
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License Information](Licence Information)
+
 
 ## Installation
 ${installation}
@@ -22,19 +27,19 @@ ${installation}
 ## Usage
 ${usage}
 
-## License Information
-This project includes the ${license} license.
-
 ## Contributing
 ${contributing}
 
 ## Tests
 ${tests}
 
-## Additional Questions
+## Questions
 - GitHub username: ${github}
 - GitHub link: ${githublink}
 - Email address: ${email}
+
+## License 
+This project is covered with the ${license} license.
 `;
 
 inquirer
@@ -47,11 +52,6 @@ inquirer
     type: 'input',
     name: 'description',
     message: 'Provide a detailed description of your project.',
-  },
-  {
-    type: 'input',
-    name: 'contents',
-    message: 'Provide a table of contents for your project.',
   },
   {
     type: 'input',
@@ -95,18 +95,13 @@ inquirer
     choices: ['MIT', 'GPL', 'Apache', 'No license']
   },
 ])
+// Callback function that takes the users answers and then writes the content to generate the README.md file
 .then((answers) => {
     const READMEContent = generateREADME(answers);
 
+    // If an error occurs, it is written to the console. Otherwise, it logs a "Success" message
     fs.writeFile('README.md', READMEContent, (err) =>
     err ? console.log(err) : console.log('Successfully created README.md!') 
     );
 });
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
 
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
