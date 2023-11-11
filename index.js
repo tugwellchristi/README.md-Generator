@@ -51,27 +51,27 @@ inquirer
   {
     type: 'input',
     name: 'description',
-    message: 'Provide a detailed description of your project.',
+    message: 'Provide a detailed description of your project, including: the motivation for your project, why you created this project, and what this project solves.',
   },
   {
     type: 'input',
     name: 'installation',
-    message: 'Provide details about the installation of your project.',
+    message: 'Provide details about the installation of your project, including a step by step description of how to get the development environment running.',
   },
   {
     type: 'input',
     name: 'usage',
-    message: 'Provide usage details about your project.',
+    message: 'Provide usage instructions and examples for your project, including screenshots as needed.',
   },
   {
     type: 'input',
     name: 'contributing',
-    message: 'Provide contributing information about your project.',
+    message: 'Provide contributing information for your project so other developers can contribute to it.',
   },
   {
     type: 'input',
     name: 'tests',
-    message: 'Provide testing information for your project.',
+    message: 'Provide testing information for your project if included in development.',
   },
   {
     type: 'input',
