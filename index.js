@@ -79,11 +79,6 @@ inquirer
   },
   {
     type: 'input',
-    name: 'githublink',
-    message: 'What is the link to your GitHub profile?',
-  },
-  {
-    type: 'input',
     name: 'email',
     message: 'What is your email address?',
   },
