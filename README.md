@@ -1,5 +1,5 @@
 # README.md Generator
-* MIT license
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Project Description
 This project is an application created and implemented via command-line that will allow users to generate a professional README. It will prompt them through the essential fields needed to complete a thorough README.md document. 
