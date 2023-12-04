@@ -7,7 +7,7 @@ This project is an application created and implemented via command-line that wil
 ## Table of Contents
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Application Video](#application)
+- [Demo](#demo)
 - [Questions](#questions)
 - [License](#licence)
 
@@ -17,7 +17,7 @@ To use this application, the user will be presented with a list of questions thr
 ## Contributing
 To get involved, reference the [Contributing Guide](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) to contribute to this project.  
 
-## Application Video
+## Demo
 View the working application [here.](https://drive.google.com/file/d/1KuxJYpoeBgrCfwYyjjuYIRBt4g2Ojwe0/view)
 
 ## Questions
