@@ -1,8 +1,8 @@
-# Professional README.md Generator
+# SVG Logo Maker
 * MIT license
 
 ## Project Description
-A short description will be added here explaining the what, why, and how of a project, using the following questions as a guide: What was the motivation for this project? Why did you build this project? What problem does this project solve?
+ As a freelance web developer, I've created a simple logo generator so that I don't have to pay a graphic designer.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -14,19 +14,19 @@ A short description will be added here explaining the what, why, and how of a pr
 
 
 ## Installation
-The steps required to install a project will be featured here. This will include a step-by-step description of how to get the development environment running.
+The following functionality has been included: - User can enter up to 3 characters when prompted for text
 
 ## Usage
-Instructions and examples for use will be featured here. Screenshots  can be added as needed.
+Instructions here. 
 
 ## Contributing
-Details on how other developers can contribute will be added here soon. 
+Contributing info here
 
 ## Tests
-Testing protocol will be featured here soon.
+testing protocol here
 
 ## Questions
-- GitHub username: tugwellchristi	
+- GitHub username: tugwellchristi
 - GitHub link: https://github.com/tugwellchristi
 - Email address: tugwellchristi@gmail.com
 
