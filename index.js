@@ -35,7 +35,6 @@ ${tests}
 
 ## Questions
 - GitHub username: ${github}
-- GitHub link: ${githublink}
 - Email address: ${email}
 
 ## License 
