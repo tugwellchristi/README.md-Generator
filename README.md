@@ -2,33 +2,27 @@
 * MIT license
 
 ## Project Description
-A short description will be added here explaining the what, why, and how of a project, using the following questions as a guide: What was the motivation for this project? Why did you build this project? What problem does this project solve?
+This project is an application created and implemented via command-line that will allow users to generate a professional README. It will prompt them through the essential fields needed to complete a thorough README.md document. 
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Tests](#tests)
+- [Application Video](#application)
 - [Questions](#questions)
 - [License](#licence)
 
-
-## Installation
-The steps required to install a project will be featured here. This will include a step-by-step description of how to get the development environment running.
-
 ## Usage
-Instructions and examples for use will be featured here. Screenshots  can be added as needed.
+To use this application, the user will be presented with a list of questions through command-line and after completing all of the prompts, a README.md will be generated. 
 
 ## Contributing
-Details on how other developers can contribute will be added here soon. 
+To get involved, reference the [Contributing Guide](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) to contribute to this project.  
 
-## Tests
-Testing protocol will be featured here soon.
+## Application Video
+View the working application [here.](https://drive.google.com/file/d/1KuxJYpoeBgrCfwYyjjuYIRBt4g2Ojwe0/view)
 
 ## Questions
-- GitHub username: tugwellchristi	
-- GitHub link: https://github.com/tugwellchristi
-- Email address: tugwellchristi@gmail.com
+- GitHub username: [tugwellchristi](https://github.com/tugwellchristi/README.md-Generator)
+- Email address: [tugwellchristi@gmail.com](mailto:tugwellchristi@gmail.com)
 
 ## License 
 This project is covered with the MIT license.
